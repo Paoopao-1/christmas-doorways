@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>圣诞之门 · Christmas Doorways</title>
+  <meta name="description" content="为一个重要的人，亲手准备一份每天打开一扇门、直到圣诞节才完整揭晓的圣诞礼物。">
+  <meta name="theme-color" content="#F5EBD8">
+  <!-- 字体：标题 龙藏体 / 手写 霞鹜文楷 / 数字 IM Fell English（均为开源字体，按字符分片加载；上线时建议改为自托管） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/long-cang@5.3.0/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-regular.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/im-fell-english@5.3.0/index.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="/#/" class="brand"><span class="brand-zh">圣诞之门</span><span class="brand-en">Christmas Doorways</span></a>
+    <nav class="steps" id="steps" aria-label="礼物准备进度" hidden></nav>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
