@@ -259,7 +259,9 @@ function refresh(root, view) {
   const note = root.querySelector('#waitNote');
   if (today < 1) {
     note.hidden = false;
-    note.textContent = `第一扇门会在 ${fmt(range(view.d).start)} 打开。到时候再来，它会在这里等你。`;
+    note.textContent = view.d.allowEarly
+      ? `按日子，第一扇门在 ${fmt(range(view.d).start)} 打开。不过送礼人允许你提前打开它们。`
+      : `第一扇门会在 ${fmt(range(view.d).start)} 打开。到时候再来，它会在这里等你。`;
   } else note.hidden = true;
 
   root.querySelector('#ornList').innerHTML = view.days
